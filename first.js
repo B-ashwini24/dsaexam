@@ -1,13 +1,22 @@
-let arr=[3, 12, 34, 2, 0, -1]
-let min=arr[0]
-let arr1=[]
+let arr=[3 ,12, 34, 2, 0, -1]
+let newarr=[]
+
 for(let i=0;i<arr.length;i++)
 {
-	min=arr[i+1]
-    if(arr[i]>min)
-      {
-      	arr1.push(arr[i])
-      }
+		for(let j=i+1;j<arr.length;j++)
+    {
+    		if(arr[i]>arr[j])
+        {
+        	newarr.push(arr[i])
+          break
+        }
+        else
+        {
+        		break
+        }
+    }
+    
+        		
 }
-arr1.push(arr[arr.length-1])
-console.log(arr1)
+newarr.push(arr[arr.length-1])
+console.log(newarr)
